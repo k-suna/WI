@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="book_recommed.xml" ont_id="1681977604093ont" >
+<FILENAME_ONT>book_recommed.xml</FILENAME_ONT>
+<W_CONCEPTS>
+<CANVAS_SIZE w="2566" h="3559" x="596" y="146" />
+<CONCEPT id="1681977604093_n0" >
+<LABEL>Any</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="10" y="10"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n1" >
+<LABEL>本</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="290" y="20"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1681977604095_s2" 
+ type="NW"  label="slot"  kind="a/o"  num="1.."  role="著者"  class_constraint="人間"  rh_name="著者"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1681977604095_s3" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="出版日"  class_constraint="日付"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1681977604095_s4" 
+ type="R2-2"  label="slot"  kind="a/o"  num="1"  role="値"  class_constraint="正の整数"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="日付$slot"/>
+<SUB_L label="" def="" role_name="" class_const="正の整数" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1681977604095_s5" 
+ type="R2-2"  label="slot2"  kind="a/o"  num="1"  role="単位"  class_constraint="日"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="日付$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="日付" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1681977604095_s6" 
+ type="NW"  label="slot3"  kind="a/o"  num="1"  role="出版社"  class_constraint="企業"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="企業" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1681977604095_s7" 
+ type="NW"  label="slot4"  kind="a/o"  num="1"  role="定価"  class_constraint="正の整数"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="正の整数" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1681977604095_s9" 
+ type="NW"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n10" >
+<LABEL>漫画</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="666" y="30"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1681977604095_s11" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="読み物ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="本$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="読み物ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n12" >
+<LABEL>小説</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="666" y="130"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1681977604095_s13" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="読み物ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="本$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="読み物ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n14" >
+<LABEL>教科書</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="680" y="646"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1681977604095_s15" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="学問ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="本$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="教科書ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n16" >
+<LABEL>論文雑誌</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="870" y="450"/>
+<SLOTS>
+<SLOT id="1681977604095_s17" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="学問ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="雑誌$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="学問ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n18" >
+<LABEL>雑誌</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="610" y="286"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1681977604095_s19" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="本$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n20" >
+<LABEL>参考書</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="670" y="540"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1681977604095_s21" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="学問ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="本$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="学問ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n22" >
+<LABEL>人間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="166" y="106"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n23" >
+<LABEL>日付</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="140" y="326"/>
+<SLOTS>
+<SLOT id="1681977604095_s24" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="値"  class_constraint="正の整数"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="正の整数" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1681977604095_s25" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="単位"  class_constraint="日"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="日" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n26" >
+<LABEL>正の整数</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="140" y="206"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n27" >
+<LABEL>日</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="200" y="266"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n28" >
+<LABEL>ファッション雑誌</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="880" y="300"/>
+<SLOTS>
+<SLOT id="1681977604095_s29" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="ファッション"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="雑誌$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="ファッション" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n30" >
+<LABEL>スポーツ雑誌</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="880" y="370"/>
+<SLOTS>
+<SLOT id="1681977604095_s31" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="スポーツ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="雑誌$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="スポーツ" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n32" >
+<LABEL>企業</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="106" y="100"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n33" >
+<LABEL>ジャンル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="160" y="510"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n34" >
+<LABEL>スポーツ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="526" y="466"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n36" >
+<LABEL>恋愛</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="530" y="500"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n38" >
+<LABEL>読み物ジャンル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="270" y="450"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n39" >
+<LABEL>学問ジャンル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="250" y="580"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n40" >
+<LABEL>国語</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="400" y="630"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n41" >
+<LABEL>数学</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="406" y="670"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n42" >
+<LABEL>英語</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="360" y="690"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n43" >
+<LABEL>理科</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="470" y="630"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n44" >
+<LABEL>社会</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="460" y="680"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681977604095_n45" >
+<LABEL>ファッション</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="520" y="546"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n44" >
+<LABEL>行為</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="40" y="840"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n45" >
+<LABEL>本を選択する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="146" y="780"/>
+<SLOTS>
+<SLOT id="1682585242066_s46" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="選択ジャンル"  class_constraint="ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n48" >
+<LABEL>本を推薦する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="130" y="886"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1682585242066_s49" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="部分行為"  class_constraint="本を選択する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1685608075787_s48" 
+ type="OR"  label="slot"  kind="p/o"  num="1.."  role="選択ジャンル"  class_constraint="ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="本を選択する$slot"/>
+<SUB_L label="" def="" role_name="" class_const="ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="本を選択する" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n50" >
+<LABEL>読み物系の本を推薦する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="410" y="860"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1682585242066_s51" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="部分行為"  class_constraint="本を選択する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="本を推薦する$slot"/>
+<SLOTS>
+<SLOT id="1682585242066_s52" 
+ type="OR"  label="slot"  kind="p/o"  num="1.."  role="選択ジャンル"  class_constraint="読み物ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="本を推薦する$slot%slot"/>
+<SUB_L label="" def="" role_name="" class_const="読み物ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="本を選択する" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n54" >
+<LABEL>学問系の本を推薦する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="406" y="1010"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1682585242066_s55" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="部分行為"  class_constraint="本を選択する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="本を推薦する$slot"/>
+<SLOTS>
+<SLOT id="1682585242066_s56" 
+ type="OR"  label="slot"  kind="p/o"  num="1.."  role="選択ジャンル"  class_constraint="学問ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="本を推薦する$slot%slot"/>
+<SUB_L label="" def="" role_name="" class_const="学問ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="本を選択する" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n58" >
+<LABEL>もの</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="100" y="40"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n59" >
+<LABEL>抽象物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="60" y="320"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n60" >
+<LABEL>単位</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="140" y="270"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n61" >
+<LABEL>スポーツ漫画</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1026" y="26"/>
+<SLOTS>
+<SLOT id="1682585242066_s62" 
+ type="OR"  label="slot"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="スポーツ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="漫画$slot"/>
+<SUB_L label="" def="" role_name="" class_const="スポーツ" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n63" >
+<LABEL>恋愛漫画</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1040" y="100"/>
+<SLOTS>
+<SLOT id="1682585242066_s64" 
+ type="OR"  label="slot"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="恋愛"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="漫画$slot"/>
+<SUB_L label="" def="" role_name="" class_const="恋愛" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n65" >
+<LABEL>恋愛小説</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1020" y="250"/>
+<SLOTS>
+<SLOT id="1682585242066_s66" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="恋愛"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="小説$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="恋愛" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n67" >
+<LABEL>スポーツ小説</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1006" y="180"/>
+<SLOTS>
+<SLOT id="1682585242066_s68" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="スポーツ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="小説$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="スポーツ" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n69" >
+<LABEL>数学の参考書</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="890" y="540"/>
+<SLOTS>
+<SLOT id="1682585242066_s70" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="数学"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="参考書$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="数学" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n71" >
+<LABEL>数学の教科書</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="910" y="640"/>
+<SLOTS>
+<SLOT id="1682585242066_s72" 
+ type="OR"  label="slot6"  kind="a/o"  num="1"  role="ジャンル"  class_constraint="数学"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="教科書$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="数学" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n73" >
+<LABEL>暇な時間におすすめの本を推薦する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="710" y="750"/>
+<SLOTS>
+<SLOT id="1682585242066_s74" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="部分行為"  class_constraint="本を選択する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="読み物系の本を推薦する$slot"/>
+<SLOTS>
+<SLOT id="1682585242066_s75" 
+ type="R2-2"  label="slot"  kind="p/o"  num="1.."  role="選択ジャンル"  class_constraint="スポーツ | 恋愛"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="読み物系の本を推薦する$slot%slot"/>
+<SUB_L label="" def="" role_name="" class_const="スポーツ | 恋愛" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="本を選択する" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n77" >
+<LABEL>研究におすすめの本を推薦する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="770" y="1010"/>
+<SLOTS>
+<SLOT id="1682585242066_s78" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="部分行為"  class_constraint="本を選択する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="学問系の本を推薦する$slot"/>
+<SLOTS>
+<SLOT id="1682585242066_s79" 
+ type="R2-2"  label="slot"  kind="p/o"  num="1.."  role="選択ジャンル"  class_constraint="学問ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="学問系の本を推薦する$slot%slot"/>
+<SUB_L label="" def="" role_name="" class_const="学問ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="本を選択する" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n81" >
+<LABEL>勉強におすすめの本を推薦する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="760" y="1140"/>
+<SLOTS>
+<SLOT id="1682585242066_s82" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="部分行為"  class_constraint="本を選択する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="学問系の本を推薦する$slot"/>
+<SLOTS>
+<SLOT id="1682585242066_s83" 
+ type="R2-2"  label="slot"  kind="p/o"  num="1.."  role="選択ジャンル"  class_constraint="学問ジャンル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="学問系の本を推薦する$slot%slot"/>
+<SUB_L label="" def="" role_name="" class_const="学問ジャンル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="本を選択する" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1681980565067_n85" >
+<LABEL>趣味におすすめの本を推薦する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="750" y="890"/>
+<SLOTS>
+<SLOT id="1682585242066_s86" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="部分行為"  class_constraint="本を選択する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="読み物系の本を推薦する$slot"/>
+<SLOTS>
+<SLOT id="1682585242066_s87" 
+ type="R2-2"  label="slot"  kind="p/o"  num="1.."  role="選択ジャンル"  class_constraint="ファッション | スポーツ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="読み物系の本を推薦する$slot%slot"/>
+<SUB_L label="" def="" role_name="" class_const="ファッション | スポーツ" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="本を選択する" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<ISA id="1681977604095_isa47" parent="本" child="漫画" />
+<ISA id="1681977604095_isa48" parent="本" child="小説" />
+<ISA id="1681977604095_isa49" parent="本" child="教科書" />
+<ISA id="1681977604095_isa50" parent="本" child="雑誌" />
+<ISA id="1681977604095_isa51" parent="本" child="参考書" />
+<ISA id="1681977604095_isa56" parent="雑誌" child="論文雑誌" />
+<ISA id="1681977604095_isa57" parent="雑誌" child="ファッション雑誌" />
+<ISA id="1681977604095_isa58" parent="雑誌" child="スポーツ雑誌" />
+<ISA id="1681977604095_isa61" parent="ジャンル" child="読み物ジャンル" />
+<ISA id="1681977604095_isa62" parent="読み物ジャンル" child="スポーツ" />
+<ISA id="1681977604095_isa65" parent="読み物ジャンル" child="恋愛" />
+<ISA id="1681977604095_isa66" parent="ジャンル" child="学問ジャンル" />
+<ISA id="1681977604095_isa67" parent="学問ジャンル" child="国語" />
+<ISA id="1681977604095_isa68" parent="学問ジャンル" child="数学" />
+<ISA id="1681977604095_isa69" parent="学問ジャンル" child="英語" />
+<ISA id="1681977604095_isa70" parent="学問ジャンル" child="理科" />
+<ISA id="1681977604095_isa71" parent="学問ジャンル" child="社会" />
+<ISA id="1681977604095_isa72" parent="読み物ジャンル" child="ファッション" />
+<ISA id="1681980565067_isa107" parent="Any" child="行為" />
+<ISA id="1681980565067_isa108" parent="行為" child="本を選択する" />
+<ISA id="1681980565067_isa109" parent="行為" child="本を推薦する" />
+<ISA id="1681980565067_isa110" parent="本を推薦する" child="読み物系の本を推薦する" />
+<ISA id="1681980565067_isa111" parent="本を推薦する" child="学問系の本を推薦する" />
+<ISA id="1681980565067_isa112" parent="Any" child="もの" />
+<ISA id="1681980565067_isa113" parent="もの" child="本" />
+<ISA id="1681980565067_isa114" parent="もの" child="企業" />
+<ISA id="1681980565067_isa115" parent="もの" child="人間" />
+<ISA id="1681980565067_isa116" parent="抽象物" child="正の整数" />
+<ISA id="1681980565067_isa117" parent="抽象物" child="ジャンル" />
+<ISA id="1681980565067_isa118" parent="単位" child="日" />
+<ISA id="1681980565067_isa119" parent="Any" child="抽象物" />
+<ISA id="1681980565067_isa120" parent="抽象物" child="単位" />
+<ISA id="1681980565067_isa121" parent="抽象物" child="日付" />
+<ISA id="1681980565067_isa122" parent="漫画" child="スポーツ漫画" />
+<ISA id="1681980565067_isa123" parent="漫画" child="恋愛漫画" />
+<ISA id="1681980565067_isa124" parent="小説" child="恋愛小説" />
+<ISA id="1681980565067_isa125" parent="小説" child="スポーツ小説" />
+<ISA id="1681980565067_isa126" parent="参考書" child="数学の参考書" />
+<ISA id="1681980565067_isa127" parent="教科書" child="数学の教科書" />
+<ISA id="1681980565067_isa128" parent="読み物系の本を推薦する" child="暇な時間におすすめの本を推薦する" />
+<ISA id="1681980565067_isa129" parent="学問系の本を推薦する" child="研究におすすめの本を推薦する" />
+<ISA id="1681980565067_isa130" parent="学問系の本を推薦する" child="勉強におすすめの本を推薦する" />
+<ISA id="1681980565067_isa131" parent="読み物系の本を推薦する" child="趣味におすすめの本を推薦する" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2566" h="3559" />
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="100" />
+<PAGE_FORMAT w="595.1905511811024" h="841.9181102362205" iw="451.19055118110236" ih="697.9181102362205" ix="72.0" iy="72.0" />
+<PRINTER_SETTINGS orientation="1" printername="OKI-MC843-DEF2E2" />
+</PRINTER>
+</OE_FILE>
